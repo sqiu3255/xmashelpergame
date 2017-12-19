@@ -29,6 +29,8 @@ public class Runner {
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
+			
+			
 			System.out.println("Where would you like to move? (Choose N, S, E, W)");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
