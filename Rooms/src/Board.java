@@ -1,20 +1,20 @@
 
 public class Board {
 	
-	Room [][] houseMap;
+	Room [][] rooms;
 	
-	public Board(Room[][] houseMap)
+	public Board(Room[][] rooms)
 	{
-		this.houseMap = houseMap; 
+		this.rooms = New Room [size][size]; 
 	}
 	
 	public void printBoard()
 	{
-		for (Room[]row:houseMap)
+		for (Room[]i:rooms)
 		{
-			for (Room room : row)
+			for(Room x:i)
 			{
-				room.print();
+				x.print();
 			}
 		System.out.println();
 		}

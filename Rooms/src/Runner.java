@@ -33,8 +33,10 @@ public class Runner {
 			
 			System.out.println("Where would you like to move? (Choose N, S, E, W)");
 			String move = in.nextLine();
+			Board s = new Board(building);
 			if(validMove(move, player1, building))
 			{
+				s.printBoard();
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
 				
 			}

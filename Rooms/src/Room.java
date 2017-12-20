@@ -31,12 +31,12 @@ public class Room {
 		else if (occupant != null)
 		{
 			System.out.print("[");
-			occupant.print();
+			occupant.print("x");
 			System.out.print("]");
 		}
 		else if (explored)
 		{
-			System.out.print("+]");
+			System.out.print("[+]");
 		}
 	}
 	
