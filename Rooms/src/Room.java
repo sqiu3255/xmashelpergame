@@ -11,7 +11,8 @@ public class Room {
 	}
 	public void enterRoom(Person x)
 	{
-		System.out.println("You enter a plain old room");
+		System.out.println("Hi Santa's Helper! Thank you for joining us on today's adventure!\n" + 
+	"Your mission is to deliver Santa's present ");
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
@@ -38,6 +39,16 @@ public class Room {
 		{
 			System.out.print("[+]");
 		}
+	}
+	
+	public boolean isExplored()
+	{
+		return explored;
+	}
+	
+	public void setExplored(boolean explored)
+	{
+		this.explored = explored;
 	}
 	
 }

@@ -31,7 +31,7 @@ public class Runner {
 		{
 			
 			
-			System.out.println("Where would you like to move? (Choose N, S, E, W)");
+			System.out.println("Where would you like to move?)");
 			String move = in.nextLine();
 			Board s = new Board(building);
 			if(validMove(move, player1, building))
