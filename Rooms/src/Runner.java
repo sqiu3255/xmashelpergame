@@ -5,6 +5,7 @@ public class Runner {
 
 	private static boolean gameOn = true;
 	
+	
 	public static void main(String[] args)
 	{
 		Room[][] building = new Room[5][5];
@@ -18,6 +19,10 @@ public class Runner {
 			}
 		}
 		
+		System.out.println("Hi Santa's Helper! Thank you for joining us on today's adventure!\n" + 
+				"Santa is a bit sick so he will need some help delivering presents.\n" + 
+				"Move around using 's','e','d' or 'f'");
+		
 		//Create a random winning room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
@@ -27,6 +32,7 @@ public class Runner {
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
+		
 		while(gameOn)
 		{
 			

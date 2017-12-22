@@ -11,9 +11,9 @@ public class Room {
 	}
 	public void enterRoom(Person x)
 	{
-		System.out.println("Hi Santa's Helper! Thank you for joining us on today's adventure!\n" + 
-	"Your mission is to deliver Santa's present ");
+		System.out.println("Your mission is to deliver Santa's present ");
 		occupant = x;
+		explored = true;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 	}
@@ -23,11 +23,21 @@ public class Room {
 		occupant = null;
 	}
 	
+	public boolean isExplored(Person x)
+	{
+		return explored;
+	}
+	
+	public void setExplored(boolean explored)
+	{
+		this.explored = explored;
+	}
+	
 	public void print()
 	{	
 		if (!explored && occupant == null)
 		{
-			System.out.print("[]");
+			System.out.print("[ ]");
 		}
 		else if (occupant != null)
 		{
@@ -39,16 +49,6 @@ public class Room {
 		{
 			System.out.print("[+]");
 		}
-	}
-	
-	public boolean isExplored()
-	{
-		return explored;
-	}
-	
-	public void setExplored(boolean explored)
-	{
-		this.explored = explored;
 	}
 	
 }
