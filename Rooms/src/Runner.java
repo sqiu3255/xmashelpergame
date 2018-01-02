@@ -23,10 +23,17 @@ public class Runner {
 				"Santa is a bit sick so he will need some help delivering presents.\n" + 
 				"Move around using 's','e','d' or 'f'");
 		
+		
 		//Create a random winning room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
 		building[x][y] = new WinningRoom(x, y);
+		
+		//Create a random child room.
+		x = (int)(Math.random()*building.length);
+		y = (int)(Math.random()*building.length);
+		building[x][y] = new ChildRoom(x,y);
+				
 		 
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
@@ -37,7 +44,7 @@ public class Runner {
 		{
 			
 			
-			System.out.println("Where would you like to move?)");
+			System.out.println("Where would you like to move?");
 			String move = in.nextLine();
 			Board s = new Board(building);
 			if(validMove(move, player1, building))
@@ -59,7 +66,7 @@ public class Runner {
 	{
 		move = move.toLowerCase().trim();
 		switch (move) {
-			case "n":
+			case "e":
 				if (p.getxLoc() > 0)
 				{
 					map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
@@ -70,7 +77,7 @@ public class Runner {
 				{
 					return false;
 				}
-			case "e":
+			case "f":
 				if (p.getyLoc()< map[p.getyLoc()].length -1)
 				{
 					map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
@@ -82,7 +89,7 @@ public class Runner {
 					return false;
 				}
 
-			case "s":
+			case "d":
 				if (p.getxLoc() < map.length - 1)
 				{
 					map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
@@ -94,7 +101,7 @@ public class Runner {
 					return false;
 				}
 
-			case "w":
+			case "s":
 				if (p.getyLoc() > 0)
 				{
 					map[p.getxLoc()][p.getyLoc()].leaveRoom(p);

@@ -7,6 +7,7 @@ public class Board {
 	{
 		this.rooms = rooms;
 	}
+	
 	public Board(int size)
 	{
 		this.rooms = new Room [size][size]; 
