@@ -1,5 +1,5 @@
 
-public class ChildRoom {
+public class ChildRoom extends Room{
 	public ChildRoom(int x, int y)
 	{
 		super(x, y);
