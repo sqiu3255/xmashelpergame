@@ -1,4 +1,5 @@
 
+
 public class ChildRoom extends Room{
 	public ChildRoom(int x, int y)
 	{
@@ -10,6 +11,13 @@ public class ChildRoom extends Room{
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You found the some snacks! Regain energy before moving on.");
+		System.out.println("Shh! There are kids sleeping in this room ..  \n" +
+							"Quick choose an option to take! (A or B)");
+		
+		Scanner choice = new Scanner(System.in); 
+		try {
+			String ans = 
+		}
+		
 	}
 }

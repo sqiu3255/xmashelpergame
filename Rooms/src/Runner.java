@@ -20,8 +20,9 @@ public class Runner {
 		}
 		
 		System.out.println("Hi Santa's Helper! Thank you for joining us on today's adventure!\n" + 
-				"Santa is a bit sick so he will need some help delivering presents.\n" + 
-				"Move around using 's','e','d' or 'f'");
+				"Santa is a bit sick so he will need some help delivering presents.\n" +
+				"However, you must make sure to not get caught! Good Luck!\n" +
+				"Move around using 's','e','d' or 'f'\n");
 		
 		
 		//Create a random winning room.
