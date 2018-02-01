@@ -1,4 +1,8 @@
-
+/*
+*  Author: Sophia Qiu
+*  Date Created: 12.2017
+*  Project Name: Christmas Helper Text Based Adventure Game
+*/
 
 public class ChildRoom extends Room{
 	public ChildRoom(int x, int y)
