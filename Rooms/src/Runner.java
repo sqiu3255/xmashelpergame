@@ -1,3 +1,10 @@
+/*
+*  Author: Sophia Qiu
+*  Date Created: 12.2017
+*  Project Name: Christmas Helper Text Based Adventure Game
+*/
+
+
 import java.util.Scanner;
 
 public class Runner {
